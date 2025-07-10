@@ -1,0 +1,151 @@
+::selection {
+  background: skyblue;
+  color: black;
+}
+
+br::selection , 
+#foto1::selection ,
+.foto2::selection ,
+.whatsappbuton::selection ,
+.aramabuton::selection {
+  background: rgba(0,0,0,0);
+  color: white;
+}
+
+body {
+  background: /* #eeeeee */ #DCF8F8;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Open Sans', Sans-Serif;
+  max-width: 100vw;
+}
+
+body > * {
+  text-align: center;
+  animation: starting 0.7s forwards;
+}
+
+h3 {
+  padding: 0 0 0 4vw;
+}
+
+.m-4w{
+  margin: 0 0 0 4vw;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+#foto1 {
+  margin-top: 7px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.foto2 {
+  aspect-ratio: 380 / 185;
+  max-width: 95vw;
+  border-radius: 10px;
+  box-shadow: 0 0 15px gray;
+  transition: transform 0.3s;
+}
+
+.foto2:active {
+  transform: scale(0.99);
+}
+
+.blue {
+  color: #007fff;
+}
+
+.big {
+  font-size: 1.6rem;
+}
+
+.buttons {
+  padding: 3px;
+  width: 40vw;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  gap: 5px;
+  margin: 10px;
+  transition: transform 0.3s;
+  padding-right: 16px;
+  min-height: 50px;
+  font-weight: 600;
+  border: 1px solid black;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.7);
+}
+
+.whatsappbuton {
+  background: #45EB63;
+}
+
+.whatsappbuton:hover {
+  background: limegreen;
+  transform: scale(0.98);
+}
+
+.whatsappbuton:active {
+  transform: scale(0.9);
+}
+
+.aramabuton {
+  background: #0757E4;
+}
+
+.aramabuton:hover {
+  background: blue;
+  transform: scale(0.98);
+}
+
+.aramabuton:active {
+  transform: scale(0.9);
+} 
+
+.box {
+  background: lightblue;
+  margin: 45px 20px;
+  padding: 50px 50px 50px 10px;
+  border-radius: 10px;
+  text-align: start;
+  border: 3px solid skyblue;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: "— ";
+}
+
+#copyright {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+footer {
+ border-top: 1px solid lightblue;
+}
+
+@keyframes starting {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+@media (min-width: 700px) {
+  
+  .foto2{
+    margin: 1.1rem;
+  }
+  
+}
