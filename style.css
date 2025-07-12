@@ -25,6 +25,15 @@ body > * {
   animation: starting 0.7s forwards;
 }
 
+#uyari {
+  color: black;
+  padding: 9px;
+  margin: 5px;
+  background: white;
+  border-radius: 4px;
+  display: none;
+}
+
 h3 {
   padding: 0 0 0 4vw;
 }
@@ -146,6 +155,10 @@ footer {
   
   .foto2{
     margin: 1.1rem;
+  }
+
+  #uyari{
+    display: block;
   }
   
 }
